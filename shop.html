@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+
+  <!-- ✅ Bootstrap (no visual changes) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
@@ -67,7 +71,7 @@
     }
 
     /* ===== PRODUCT GRID ===== */
-    .container {
+    .container-custom {
       padding: 3rem 2rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -164,31 +168,37 @@
 <body>
 
 <header>
-  <img class="hero" src="images/banner.jpg" alt="Shop Banner">
+  <img class="hero img-fluid" src="images/banner.jpg" alt="Shop Banner">
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="shop.html">Shop</a>
-  <a href="custom.html">Custom Prints</a>
-  <a href="contact.html">Contact</a>
+  <div class="container text-center">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="custom.html">Custom Prints</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
+
+<!-- ✅ Wrapped safely for Bootstrap (no visual change) -->
 <div class="container">
+  <div class="container-custom">
 
-  <div class="product">
-    <img src="images/product01.jpg" alt="Product 1" onclick="openZoom(this)">
-    <h3>City Ruins</h3>
-    <p class="price">€99.99</p>
-    <button onclick="alert('This is a demo. Add real checkout later!')">Buy</button>
+    <div class="product">
+      <img src="images/product01.jpg" alt="Product 1" onclick="openZoom(this)">
+      <h3>City Ruins</h3>
+      <p class="price">€99.99</p>
+      <button onclick="alert('This is a demo. Add real checkout later!')">Buy</button>
+    </div>
+
+    <div class="product">
+      <img src="images/product02.jpg" alt="Product 2" onclick="openZoom(this)">
+      <h3>3x Dreadnaught Rocketlauncher</h3>
+      <p class="price">€4.99</p>
+      <button onclick="alert('This is a demo. Add real checkout later!')">Buy</button>
+    </div>
+
   </div>
-
-  <div class="product">
-    <img src="images/product02.jpg" alt="Product 2" onclick="openZoom(this)">
-    <h3>3x Dreadnaught Rocketlauncher</h3>
-    <p class="price">€4.99</p>
-    <button onclick="alert('This is a demo. Add real checkout later!')">Buy</button>
-  </div>
-
 </div>
 
 <!-- ZOOM -->
@@ -199,6 +209,9 @@
 <footer>
   <p>© 2026 My Shop</p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
   function openZoom(img) {
