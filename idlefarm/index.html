@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Idle Farm</title>
+    <title>Idle Farm – Cozy Idle Farming Game</title>
 
-    <meta name="description" content="Idle Farm is a cozy idle farming game by Tableforge.">
+    <meta name="description"
+          content="Idle Farm is a cozy idle farming game developed by Tableforge. Grow crops, raise animals, collect resources, and progress through your farm over time.">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f3e8;
-            color: #2f3a2f;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7f2;
+            color: #26352a;
             line-height: 1.6;
         }
 
         header {
-            background: #6b8e5a;
+            background: #385c43;
             color: white;
             padding: 60px 20px;
             text-align: center;
@@ -26,41 +31,82 @@
 
         header h1 {
             margin: 0 0 10px;
-            font-size: 42px;
+            font-size: 48px;
         }
 
         header p {
             margin: 0;
-            font-size: 18px;
+            font-size: 20px;
+            opacity: 0.95;
         }
 
         main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
         }
 
         section {
             background: white;
-            padding: 30px;
             margin-bottom: 25px;
+            padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
         }
 
         h2 {
             margin-top: 0;
+            color: #385c43;
         }
 
         a {
-            color: #557a45;
+            color: #385c43;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 18px;
+            background: #385c43;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background: #2d4b36;
         }
 
         footer {
             text-align: center;
             padding: 30px 20px;
-            color: #667066;
-            font-size: 14px;
+            background: #26352a;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 22px;
+            }
         }
     </style>
 </head>
@@ -69,7 +115,7 @@
 
 <header>
     <h1>Idle Farm</h1>
-    <p>A cozy idle farming game by Tableforge</p>
+    <p>A cozy idle farming game developed by Tableforge</p>
 </header>
 
 <main>
@@ -78,56 +124,124 @@
         <h2>About Idle Farm</h2>
 
         <p>
-            Idle Farm is a cozy idle farming game developed by Tableforge.
-            Build and expand your farm, grow crops, collect resources,
-            discover new characters and progress through the game at your
-            own pace.
+            <strong>Idle Farm</strong> is a cozy idle farming game developed by
+            <strong>Tableforge</strong>.
         </p>
 
         <p>
-            Idle Farm includes optional Google Play Games features such as
-            Google Play Games sign-in, achievements and leaderboards.
-        </p>
-    </section>
-
-    <section>
-        <h2>Privacy</h2>
-
-        <p>
-            We respect your privacy. Information about how Idle Farm
-            handles user data and information provided through Google Play
-            Games is described in our Privacy Policy.
+            In Idle Farm, players build and expand their own farm, grow crops,
+            raise animals, collect resources, earn money and progress through
+            the game over time.
         </p>
 
         <p>
-            <a href="privacy.html">Read the Privacy Policy</a>
+            The game is designed as a relaxed idle experience. Players can
+            develop their farm and continue making progress even when they are
+            not actively playing.
         </p>
     </section>
 
     <section>
-        <h2>Terms of Service</h2>
+        <h2>Game Features</h2>
+
+        <ul>
+            <li>Build and expand your own farm</li>
+            <li>Grow and harvest different crops</li>
+            <li>Raise and manage farm animals</li>
+            <li>Collect and produce various resources</li>
+            <li>Earn money and improve your farm</li>
+            <li>Progress through the game's advancement system</li>
+            <li>Unlock achievements and track your progress</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Google Play Games Services</h2>
 
         <p>
-            The terms governing the use of Idle Farm are available here:
+            Idle Farm uses <strong>Google Play Games Services</strong> to
+            provide optional gaming features.
         </p>
 
         <p>
-            <a href="terms.html">Read the Terms of Service</a>
+            These features include Google Play Games player sign-in,
+            achievements and leaderboards. Players can use these features
+            to track and compare their progress in Idle Farm.
+        </p>
+
+        <p>
+            Google Play Games Services is provided by Google and is subject
+            to Google's applicable terms and privacy policies.
         </p>
     </section>
 
     <section>
-        <h2>Developer</h2>
+        <h2>Advertising</h2>
 
         <p>
-            Idle Farm is developed by Tableforge.
+            Idle Farm may display advertisements using
+            <strong>Google AdMob</strong>.
+        </p>
+
+        <p>
+            Advertising may involve the collection and processing of certain
+            information by Google and its advertising partners. Details about
+            advertising, data processing and user privacy are explained in
+            our Privacy Policy.
+        </p>
+    </section>
+
+    <section>
+        <h2>Privacy and Terms</h2>
+
+        <p>
+            For detailed information about how Idle Farm handles information
+            and how third-party services such as Google Play Games Services
+            and Google AdMob are used, please read our Privacy Policy.
+        </p>
+
+        <div class="links">
+            <a class="button"
+               href="https://tableforge.online/idlefarm/privacy.html">
+                Privacy Policy
+            </a>
+
+            <a class="button"
+               href="https://tableforge.online/idlefarm/terms.html">
+                Terms of Service
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>About Tableforge</h2>
+
+        <p>
+            <strong>Tableforge</strong> is an independent project focused on
+            creating digital games, tabletop content and 3D models.
+        </p>
+
+        <p>
+            Idle Farm is developed and maintained by Tableforge.
         </p>
     </section>
 
 </main>
 
 <footer>
-    &copy; 2026 Tableforge. All rights reserved.
+    <p>
+        &copy; 2026 Tableforge. All rights reserved.
+    </p>
+
+    <p>
+        <a href="https://tableforge.online/idlefarm/privacy.html">
+            Privacy Policy
+        </a>
+
+        <a href="https://tableforge.online/idlefarm/terms.html">
+            Terms of Service
+        </a>
+    </p>
 </footer>
 
 </body>
